@@ -1,12 +1,13 @@
 ## What is CI/CD
 - CI/CD is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deploymen
 
-### Continuous Integrtion
+### Continuous Integration
 - Requires developers to share code into the share repository several times a day, the code is verified by a automated build and here they check for bugs and manage how these will be fixed.
 - Code is pushed to github branch where is it analysed and tested
 - Some of the tests run include:
     - Unit testing – tests individual units of the code
     - Validation testing – checks the software satisfies the criteria of the client 
+![ci](https://user-images.githubusercontent.com/115226294/201149108-ed31ee1c-f5a0-4565-8433-c05f97f8760f.png)
 
 ### Continuous Development
  - It's an extension of continuous integration to make sure that you can release new changes to your customers quicker in a much more sustainable method. So on top of your continuous integration, you also automated your release process and can deploy you application at any point of time by clicking a button. Deployment will have to be done manually but that can also be done automatically
@@ -16,6 +17,8 @@
 
 ### Differences
 - CD and CDE are very similar however there is 1 difference between the 2 prosesses. On continuous delivery the integration is automatic but you must manually deploy the application whereas in continuous deployment the whole process is automated so it integrates, tests and deploys it automatically.
+![cicd1](https://user-images.githubusercontent.com/115226294/201148877-c492c48a-ca07-42f2-82e3-10bec872dd86.png)
+![cd diff 1](https://user-images.githubusercontent.com/115226294/201148895-b79c0efc-4067-4921-950c-87cf57f0f24e.png)
 
 ### Webhooks
 - A Webhook is a mechanism to automatically trigger the build of a Jenkins project in response to a commit pushed to a Git repository.
