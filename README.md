@@ -24,4 +24,12 @@
 
    ![image](https://user-images.githubusercontent.com/97250268/201118379-527ec3a3-05f8-4abb-ad4c-29d22abe31ff.png)
    
-   
+   - In a Jenkins Pipeline, every job has some sort of dependency on at least one or more jobs or events.
+
+   ![image](https://user-images.githubusercontent.com/97250268/201120938-afee9c6a-b198-4c4d-99b4-1b9f9827babe.png)
+
+   - The above diagram represents a continuous delivery pipeline in Jenkins. It contains a collection of states such as build, deploy, test and release. These jobs or events are interlinked with each other. Every state has its jobs, which work in a sequence called a continuous delivery pipeline.
+  
+   - A continuous delivery pipeline is an automated expression to show your process for getting software for version control. Thus, every change made in your software goes through a number of complex processes on its manner to being released. It also involves developing the software in a repeatable and reliable manner, and progression of the built software through multiple stages of testing and deployment.
+
+
