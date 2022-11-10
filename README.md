@@ -22,4 +22,6 @@
 
    ## What are Jenkins Stages
 
-   - 
+   ![image](https://user-images.githubusercontent.com/97250268/201118379-527ec3a3-05f8-4abb-ad4c-29d22abe31ff.png)
+   
+   
