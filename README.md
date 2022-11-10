@@ -1,3 +1,26 @@
+## What is CI/CD
+- CI/CD is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deploymen
+
+### Continuous Integrtion
+- Requires developers to share code into the share repository several times a day, the code is verified by a automated build and here they check for bugs and manage how these will be fixed.
+- Code is pushed to github branch where is it analysed and tested
+- Some of the tests run include:
+    - Unit testing – tests individual units of the code
+    - Validation testing – checks the software satisfies the criteria of the client 
+
+### Continuous Development
+ - It's an extension of continuous integration to make sure that you can release new changes to your customers quicker in a much more sustainable method. So on top of your continuous integration, you also automated your release process and can deploy you application at any point of time by clicking a button. Deployment will have to be done manually but that can also be done automatically
+
+### Continuous Deployment - CDE
+- This goes one stage futher than Continuous Delivery by deploying the actual application online automatically, so each change that passes all the stages of your production pipeline is released to your customers, there is no human interaction so this lowers the chance for human error, and even one failed test will prevent the new change being deployed to production.
+
+### Differences
+- CD and CDE are very similar however there is 1 difference between the 2 prosesses. On continuous delivery the integration is automatic but you must manually deploy the application whereas in continuous deployment the whole process is automated so it integrates, tests and deploys it automatically.
+
+### Webhooks
+- A Webhook is a mechanism to automatically trigger the build of a Jenkins project in response to a commit pushed to a Git repository.
+- This essentially means that you get the data immediately after it is pushed rather having to set up frequent pulls to get it in real time.
+
 ## What is Jenkins?
 - Jenkins is an open source automation tool written in Java programming language that allows continuous integration.
 
