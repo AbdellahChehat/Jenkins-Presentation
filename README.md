@@ -39,5 +39,12 @@
 - The majority of the integration work is automated. As a result, there are fewer integration issues. This also helps to save money and time during the project’s path.
 - The coding problems can be detected as soon as feasible by the engineers. This prevents them from having to deal with large-scale, error-prone integrations.
     
- 
+  ## Who is using Jenkins and CICD in the industry
+  - More than  60,000 companies  use Jenkins. The companies using Jenkins are most often found in United States and in the Information Technology and Services industry. Jenkins is most often used by companies with 50-200 employees and 1M-10M dollars in revenue
+  
+  ![image](https://user-images.githubusercontent.com/97250268/201127306-81fd065a-7ce5-45c0-9a73-64674459297e.png)
+  
+  ![image](https://user-images.githubusercontent.com/97250268/201128871-30d8aaee-941d-4fc2-b058-39f5cb3c968c.png)
+
+
 
