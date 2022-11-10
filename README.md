@@ -31,5 +31,13 @@
    - The above diagram represents a continuous delivery pipeline in Jenkins. It contains a collection of states such as build, deploy, test and release. These jobs or events are interlinked with each other. Every state has its jobs, which work in a sequence called a continuous delivery pipeline.
   
    - A continuous delivery pipeline is an automated expression to show your process for getting software for version control. Thus, every change made in your software goes through a number of complex processes on its manner to being released. It also involves developing the software in a repeatable and reliable manner, and progression of the built software through multiple stages of testing and deployment.
-
+  
+    ## How does Jenkins Benefit the Buisness
+    
+- With Jenkins, you’ll get a lot of help. As you can see, it is the most widely used open-source server, therefore you will receive agile teams from all over the world to help you with your problems.
+- The users encounter a variety of problems along the way. Such issues are quickly resolved, allowing the software to remain in a state where it may be released at any moment with complete confidence.
+- The majority of the integration work is automated. As a result, there are fewer integration issues. This also helps to save money and time during the project’s path.
+- The coding problems can be detected as soon as feasible by the engineers. This prevents them from having to deal with large-scale, error-prone integrations.
+    
+ 
 
