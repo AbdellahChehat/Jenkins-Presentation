@@ -72,5 +72,18 @@
   
   ![image](https://user-images.githubusercontent.com/97250268/201128871-30d8aaee-941d-4fc2-b058-39f5cb3c968c.png)
 
+ ### Execute Shell script for the job to copy code to EC2 instance
+ ```
+ #git clone https://github.com/Jorge2091/eng130_test
+ls 
+#cd /home/ubuntu/
+#ls
 
+rsync -avz -e "ssh -o StrictHostKeyChecking=no" eng130_test ubuntu@54.170.194.47:/home/ubuntu # copies the code to EC2 instance
+ssh -A -o "StrictHostKeyChecking=no" ubuntu@ec2-54-170-194-47.eu-west-1.compute.amazonaws.com << EOF # To avoid the  when ssh into EC2 instance 
+ls
+mkdir test26
+ls
+EOF
+ ```
 
