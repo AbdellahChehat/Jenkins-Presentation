@@ -71,8 +71,21 @@
   ![image](https://user-images.githubusercontent.com/97250268/201127306-81fd065a-7ce5-45c0-9a73-64674459297e.png)
   
   ![image](https://user-images.githubusercontent.com/97250268/201128871-30d8aaee-941d-4fc2-b058-39f5cb3c968c.png)
+  
+  
+ ### Execute Shell Script of the first job.
+ - This job triggers as soon as changes done and pushed to github.It is linked with the web hook. This job runs the npm test inside the app folder.
+ ```
+ git pull origin main # pulls the code from the github
+ls
+cd app # To go inside app folder
+npm install # install app
+npm test # runs the test
+ ```
 
- ### Execute Shell script for the job to copy code to EC2 instance
+ ### Execute Shell script for the job to copy code to EC2 instance.
+ 
+ -  This job is triggered as soon as the first job is passed. It connects to ec2 instance and updates new codes and relauches it. If this is success, it will trigger db-connection
  ```
  git pull origin main # To pull the code from GitHub
 ls
@@ -87,3 +100,16 @@ EOF
  
  ```
 
+### Execute Shell script for the job to connect to data base
+
+```
+ssh -A -o "StrictHostKeyChecking=no" ubuntu@ec2-54-170-194-47.eu-west-1.compute.amazonaws.com << EOF # To avoid the prompt when SSH into EC2 instance
+ls
+sudo killall -9 node Kill all the processes running
+cd app
+export DB_HOST=mongodb://34.245.3.2:27017/posts # To create an environmental variable in the app VM
+node seeds/seed.js # To run seed.js
+npm install
+nohup node app.js > /dev/null 2>&1 & # To run app in the background
+EOF
+```
