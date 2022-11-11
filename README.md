@@ -85,7 +85,7 @@ npm test # runs the test
 
  ### Execute Shell script for the job to copy code to EC2 instance.
  
- -  This job is triggered as soon as the first job is passed. It connects to ec2 instance and updates new codes and relauches it. If this is success, it will trigger db-connection
+ -  This job is triggered as soon as the first job is passed. It connects to ec2 instance and updates new codes and relauches it. If this is success, it will trigger db-connection job
  ```
  git pull origin main # To pull the code from GitHub
 ls
