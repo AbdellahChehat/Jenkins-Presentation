@@ -129,7 +129,7 @@ AWS EC2 instance setup:
 1. Name instance as you will example (Eng130-group1-jenkins-server)
 2. You can either use an existing AMI or use ubuntu 18.04 LTS t2.micro instance
 3. Security group set up should be as follows:
-   <img width="1218" alt="Screenshot 2022-11-11 at 13 33 45" src="https://user-images.githubusercontent.com/115224560/201357235-e0241162-04b3-4cdf-ab54-2fe93f10ced4.png">
+  
 
 4. Then launch the instance.
 
