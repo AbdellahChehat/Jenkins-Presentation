@@ -74,16 +74,16 @@
 
  ### Execute Shell script for the job to copy code to EC2 instance
  ```
- #git clone https://github.com/Jorge2091/eng130_test
-ls 
-#cd /home/ubuntu/
-#ls
-
-rsync -avz -e "ssh -o StrictHostKeyChecking=no" eng130_test ubuntu@54.170.194.47:/home/ubuntu # copies the code to EC2 instance
-ssh -A -o "StrictHostKeyChecking=no" ubuntu@ec2-54-170-194-47.eu-west-1.compute.amazonaws.com << EOF # To avoid the  when ssh into EC2 instance 
+ git pull origin main # To pull the code from GitHub
 ls
-mkdir test26
+rsync -avz -e "ssh -o StrictHostKeyChecking=no" app ubuntu@54.170.194.47:/home/ubuntu # This command copies code from github to the EC2 instance
+ssh -A -o "StrictHostKeyChecking=no" ubuntu@ec2-54-170-194-47.eu-west-1.compute.amazonaws.com << EOF # To avoid the prompt when SSH into EC2 instance
 ls
+sudo killall -9 node # Kill all the processes running
+cd app
+npm install
+nohup node app.js > /dev/null 2>&1 & # To run app in the background
 EOF
+ 
  ```
 
